@@ -11,6 +11,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Vundle plugins
 Plugin 'tpope/vim-fugitive'
 " languages
+Plugin 'PProvost/vim-ps1'
 Plugin 'elzr/vim-json'
 Plugin 'groenewege/vim-less'
 Plugin 'hail2u/vim-css3-syntax'
