@@ -30,6 +30,12 @@ Plugin 'tomasr/molokai'
 Plugin 'vim-scripts/ScrollColors'
 " Markdown
 Plugin 'mzlogin/vim-markdown-toc'
+" Utils
+Plugin 'scrooloose/nerdtree'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'easymotion/vim-easymotion'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
