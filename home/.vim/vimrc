@@ -15,8 +15,7 @@ Plugin 'PProvost/vim-ps1'
 Plugin 'elzr/vim-json'
 Plugin 'groenewege/vim-less'
 Plugin 'hail2u/vim-css3-syntax'
-Plugin 'jnwhiteh/vim-golang'
-Plugin 'kchmck/vim-coffee-script'
+Plugin 'fatih/vim-go'
 Plugin 'othree/html5.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'tpope/vim-haml'
@@ -100,10 +99,13 @@ noremap <Right> <nop>
 " :w!! to write to a file using sudo
 cmap w!! %!sudo tee > /dev/null %
 
-" Source the vimrc file after saving it
-autocmd BufWritePost $MYVIMRC source $MYVIMRC
-" Disable syntax highlight for files larger than 50 MB
-autocmd BufWinEnter * if line2byte(line("$") + 1) > 50000000 | syntax clear | endif
+if has("autocmd")
+  " Source the vimrc file after saving it
+  autocmd BufWritePost $MYVIMRC source $MYVIMRC
+  " Disable syntax highlight for files larger than 50 MB
+  autocmd BufWinEnter * if line2byte(line("$") + 1) > 50000000 | syntax clear | endif
+  autocmd FileType go set ts=2 sw=2 sts=2 noet nolist autowrite
+endif
 
 " Airline
 let g:airline#extensions#tabline#left_sep = ' '
