@@ -30,6 +30,7 @@ Plugin 'vim-scripts/ScrollColors'
 " Markdown
 Plugin 'mzlogin/vim-markdown-toc'
 " Utils
+Plugin 'editorconfig/editorconfig-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'easymotion/vim-easymotion'
