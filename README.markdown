@@ -10,4 +10,6 @@ This is a repo (Castle) compatible with the [homeshick](https://github.com/andse
 cd ~
 homeshick clone lantrix/dotfiles-vim
 homeshick symlink dotfiles-vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
 ```
